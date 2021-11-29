@@ -9,6 +9,6 @@
 
             @Html.EditorForModel()
             <input type="submit" value="Сохранить" />
-            <button> @Html.ActionLink("Отменить", "Index", "Cinemas")</button>
+           @Html.ActionLink("Отменить", "Index", "Cinemas", null, new { @class = "btn btn-danger" })
         }
     </fieldset>
