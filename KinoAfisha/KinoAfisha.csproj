@@ -137,17 +137,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111282326158_Init4.cs" />
-    <Compile Include="Migrations\202111282326158_Init4.designer.cs">
-      <DependentUpon>202111282326158_Init4.cs</DependentUpon>
+    <Compile Include="Migrations\202111290707573_Init1.cs" />
+    <Compile Include="Migrations\202111290707573_Init1.designer.cs">
+      <DependentUpon>202111290707573_Init1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111282332029_Init5.cs" />
-    <Compile Include="Migrations\202111282332029_Init5.designer.cs">
-      <DependentUpon>202111282332029_Init5.cs</DependentUpon>
+    <Compile Include="Migrations\202111301644077_Init2.cs" />
+    <Compile Include="Migrations\202111301644077_Init2.designer.cs">
+      <DependentUpon>202111301644077_Init2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111282351426_Init6.cs" />
-    <Compile Include="Migrations\202111282351426_Init6.designer.cs">
-      <DependentUpon>202111282351426_Init6.cs</DependentUpon>
+    <Compile Include="Migrations\202111301757599_Init3.cs" />
+    <Compile Include="Migrations\202111301757599_Init3.designer.cs">
+      <DependentUpon>202111301757599_Init3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111302015251_Init4.cs" />
+    <Compile Include="Migrations\202111302015251_Init4.designer.cs">
+      <DependentUpon>202111302015251_Init4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attributes\TargetPropertyAttribute.cs" />
@@ -214,9 +218,14 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery-3.6.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -251,31 +260,32 @@
     <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\RadioList.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\TextArea.cshtml" />
-    <Content Include="Views\Kinos\Detail.cshtml" />
     <Content Include="Views\Formats\Create.cshtml" />
     <Content Include="Views\Formats\Edit.cshtml" />
     <Content Include="Views\Formats\Index.cshtml" />
     <Content Include="Views\Descriptions\Create.cshtml" />
     <Content Include="Views\Descriptions\Edit.cshtml" />
     <Content Include="Views\Descriptions\Index.cshtml" />
+    <Content Include="Views\Films\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111282326158_Init4.resx">
-      <DependentUpon>202111282326158_Init4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111290707573_Init1.resx">
+      <DependentUpon>202111290707573_Init1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111282332029_Init5.resx">
-      <DependentUpon>202111282332029_Init5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111301644077_Init2.resx">
+      <DependentUpon>202111301644077_Init2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111282351426_Init6.resx">
-      <DependentUpon>202111282351426_Init6.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111301757599_Init3.resx">
+      <DependentUpon>202111301757599_Init3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111302015251_Init4.resx">
+      <DependentUpon>202111302015251_Init4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

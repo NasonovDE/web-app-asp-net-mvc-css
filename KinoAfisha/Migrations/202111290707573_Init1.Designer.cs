@@ -7,13 +7,13 @@ namespace KinoAfisha.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Init4 : IMigrationMetadata
+    public sealed partial class Init1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Init4));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Init1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202111282326158_Init4"; }
+            get { return "202111290707573_Init1"; }
         }
         
         string IMigrationMetadata.Source

@@ -115,8 +115,8 @@ namespace KinoAfisha.Controllers
             destination.Price = sourse.Price;
             destination.NextArrivalDate = sourse.NextArrivalDate;
             destination.KinoTime = sourse.KinoTime;
-            destination.DescriptionId = sourse.DescriptionId;
-            destination.Description = sourse.Description;
+            destination.FilmIds = sourse.FilmIds;
+
 
 
 

@@ -20,11 +20,13 @@ namespace KinoAfisha
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
-                     "~/Scripts/bootstrap.js"));
+                                 "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/Site.css"));
+                         
+                        "~/Content/bootstrap.css",
+                        "~/Content/Site.css"));
+
         }
     }
 }

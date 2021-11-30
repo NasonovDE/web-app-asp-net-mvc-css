@@ -68,11 +68,7 @@ namespace KinoAfisha.Models
         [NotMapped]
         public HttpPostedFileBase FilmCoverFile { get; set; }
 
-        /// <summary>
-        /// Расписание кино
-        /// </summary> 
-        [ScaffoldColumn(false)]
-        public virtual ICollection<Kino> Kinos{ get; set; }
+      
 
         /// <summary>
         /// Формат
@@ -106,7 +102,50 @@ namespace KinoAfisha.Models
             }
         }
 
+
+        /// <summary>
+        /// Описание Фильма
+        /// </summary>    
+        [Required]
+        [Display(Name = "Описание фильма", Order = 200)]
+        [UIHint("TextArea")]
+        public string FilmDescription { get; set; }
+
+        /// <summary>
+        /// Актеры
+        /// </summary>    
+        [Required]
+        [Display(Name = "Актеры", Order = 201)]
+        [UIHint("TextArea")]
+        public string FilmAllActors { get; set; }
+
+        /// <summary>
+        /// Дополнительно
+        /// </summary>    
+        
+        [Display(Name = "Дополнительно", Order = 202)]
+        [UIHint("TextArea")]
+        public string FilmDop { get; set; }
+
+        /// <summary>
+        /// Ключ для создания/изменения записи
+        /// </summary>    
+        [Required]
+        [Display(Name = "Ключ для создания/изменения записи", Order = 1000)]
+        [UIHint("Password")]
+        [NotMapped]
+        public string Key { get; set; }
+
+
+
+        /// <summary>
+        /// Расписание кино
+        /// </summary> 
+        [ScaffoldColumn(false)]
+        public virtual ICollection<Kino> Kinos { get; set; }
+
     }
+
 }
 
       

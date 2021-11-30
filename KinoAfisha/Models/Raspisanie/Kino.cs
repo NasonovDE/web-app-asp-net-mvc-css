@@ -47,7 +47,9 @@ namespace KinoAfisha.Models
                     dictionary.AddRange(query.ToSelectList(c => c.Id, c => $"{c.NameFilm}", c => Ids.Contains(c.Id)));
                     return dictionary;
                 }
+
                 return new List<SelectListItem> { new SelectListItem { Text = "", Value = "" } };
+
             }
         }
 
@@ -73,7 +75,7 @@ namespace KinoAfisha.Models
         public List<int> CinemaIds { get; set; }
         [Required]
         [Display(Name = "Место показа", Order = 5)]
-        [UIHint("MultipleDropDownList")]
+        [UIHint("DropDownList")]
         [TargetProperty("CinemaIds")]
         [NotMapped]
         public IEnumerable<SelectListItem> CinemaDictionary
@@ -112,34 +114,36 @@ namespace KinoAfisha.Models
         [Display(Name = "Время сеанса", Order = 40)]
         public DateTime? KinoTime { get; set; }
 
-        /// <summary>
-        /// Кинокомпания
-        /// </summary> 
-        [ScaffoldColumn(false)]
-        public int DescriptionId { get; set; }
-        [ScaffoldColumn(false)]
-        public virtual Description Description { get; set; }
-        [Display(Name = "Кинокомпании", Order = 2)]
-        [UIHint("RadioList")]
-        [TargetProperty("DescriptionId")]
-        [NotMapped]
-        public IEnumerable<SelectListItem> DescriptionDictionary
-        {
-            get
-            {
-                var db = new KinoAfishaContext();
-                var query = db.Descriptions;
+        ///// <summary>
+        ///// Кинокомпания
+        ///// </summary> 
+        //[ScaffoldColumn(false)]
+        //public int DescriptionId { get; set; }
+        //[ScaffoldColumn(false)]
+        //public virtual Description Description { get; set; }
+        //[Display(Name = "Кинокомпании", Order = 2)]
+        //[UIHint("RadioList")]
+        //[TargetProperty("DescriptionId")]
+        //[NotMapped]
+        //public IEnumerable<SelectListItem> DescriptionDictionary
+        //{
+        //    get
+        //    {
+        //        var db = new KinoAfishaContext();
+        //        var query = db.Descriptions;
 
-                if (query != null)
-                {
-                    var dictionary = new List<SelectListItem>();
-                    dictionary.AddRange(query.OrderBy(d => d.Name).ToSelectList(c => c.Id, c => c.Name, c => c.Id == DescriptionId));
-                    return dictionary;
-                }
+        //        if (query != null)
+        //        {
+        //            var dictionary = new List<SelectListItem>();
+        //            dictionary.AddRange(query.OrderBy(d => d.Name).ToSelectList(c => c.Id, c => c.Name, c => c.Id == DescriptionId));
+        //            return dictionary;
+        //        }
 
-                return new List<SelectListItem> { new SelectListItem { Text = "", Value = "" } };
-            }
-        }
+        //        return new List<SelectListItem> { new SelectListItem { Text = "", Value = "" } };
+        //    }
+        //}
+
+
         /// <summary>
         /// Дата создания записи
         /// </summary> 
